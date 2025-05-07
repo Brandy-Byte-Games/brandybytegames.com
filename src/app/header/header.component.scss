@@ -3,7 +3,7 @@
 .header {
     @include mat.toolbar-overrides(
         (
-            container-background-color: mat.$red-palette,
+            container-background-color: var(--mat-sys-primary),
         )
     );
 }

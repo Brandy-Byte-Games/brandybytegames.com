@@ -6,14 +6,11 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-html {
-    @include mat.theme(
-        (
-            color: (
-                primary: mat.$red-palette,
-            ),
-        )
-    )
-}
+// $brandy-light-theme: mat.define-theme((
+//     color: (
+//         primary: mat.define-palette(mat.$red-palette),
+//         accent: mat.$pink-palette,
+//     ),
+// ));
 
-
+// @include mat.all-component-themes($brandy-light-theme);
