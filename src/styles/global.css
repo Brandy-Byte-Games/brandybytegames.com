@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(34,34,34);
+}
+
+h1, h2 {
+    color: rgb(100,100,255);
+}
+
+p {
+    color: white;
+}
+
+.content {
+    flex: 1;
+}
