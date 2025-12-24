@@ -1,16 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @use '@angular/material' as mat;
 
-// figure out why the default theme is not being applied
-
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-// $brandy-light-theme: mat.define-theme((
-//     color: (
-//         primary: mat.define-palette(mat.$red-palette),
-//         accent: mat.$pink-palette,
-//     ),
-// ));
-
-// @include mat.all-component-themes($brandy-light-theme);
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    // background-color: rgb(100, 34, 34);
+    background-color: rgb(30, 25, 20);
+    
+}

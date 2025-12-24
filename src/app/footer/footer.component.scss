@@ -8,11 +8,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    @include mat.toolbar-overrides(
-        (
-            container-background-color: var(--mat-sys-secondary),
-        )
-    );
+    // @include mat.toolbar-overrides(
+    //     (
+    //         container-background-color: var(--mat-sys-secondary),
+    //     )
+    // );
+    background-color: rgb(10, 10, 10);
 }
 
 .spacer {

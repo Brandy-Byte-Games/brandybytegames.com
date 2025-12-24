@@ -1,11 +1,16 @@
 @use '@angular/material' as mat;
 
 .header {
-    @include mat.toolbar-overrides(
-        (
-            container-background-color: var(--mat-sys-primary),
-        )
-    );
+    // @include mat.toolbar-overrides(
+    //     (
+    //         container-background-color: var(--mat-sys-primary),
+    //     )
+    // );
+    background-color: rgb(30, 25, 20);
+}
+
+.title {
+    color: rgb(167, 195, 255);
 }
 
 .spacer {
