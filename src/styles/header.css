@@ -1,0 +1,43 @@
+ul {
+    background-color: rgb(34,34,34);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(100,100,255);
+}
+
+a p {
+    color: rgb(100,100,255);
+    font-size: 24px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+}
+
+.flex-container * {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.inner-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.content-spacer {
+    margin-top: 52px;
+}
