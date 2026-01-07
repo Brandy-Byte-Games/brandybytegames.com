@@ -1,8 +1,10 @@
 ---
+import { Image } from 'astro:assets';
+import BrandyImg from '../assets/brandy.png';
 import BrandybytegamesLayout from '../layouts/brandybytegamesLayout.astro';
 ---
 <BrandybytegamesLayout>
-    <img src="/brandy.png" alt="Brandy Byte Games">
+    <Image src={BrandyImg} alt="Brandy Byte Games" width="286" height="480" />
     <h1>
         brandybytegames.com is currently under construction.
     </h1>
