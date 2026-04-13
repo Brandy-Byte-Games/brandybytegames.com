@@ -66,4 +66,12 @@ a p {
 
 .press-kit-dropdown:hover #kits {
     display: block;
+    
+}
+
+.flex-container .dc-button {
+    /* float to the right */
+    margin-left: auto;
+    /* background image */
+    /* margin-right: 0; */
 }

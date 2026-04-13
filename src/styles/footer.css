@@ -11,3 +11,8 @@
     padding-bottom: 12px;
     padding-right: 24px;
 }
+
+.footer-flex-container.copyright {
+    justify-content: center;
+    padding-top: 0px;
+}
