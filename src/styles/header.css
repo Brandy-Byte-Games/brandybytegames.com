@@ -14,20 +14,25 @@ a p {
 
 .flex-container {
     display: flex;
+    background-color: var(--header-secondary-color);
+    color: var(--header-primary-color);
     flex-direction: row;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     box-sizing: border-box;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-top: 12px;
     padding-left: 24px;
     padding-bottom: 12px;
     padding-right: 24px;
+    margin: 0 auto;
 }
 
 .flex-container * {
     text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -40,4 +45,25 @@ a p {
 
 .content-spacer {
     margin-top: 52px;
+}
+
+#kits {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 8px 0;
+    background-color: var(--header-secondary-color);
+}
+
+#kits li {
+    list-style-type: none;
+}
+
+.press-kit-dropdown {
+    background-color: black;
+}
+
+.press-kit-dropdown:hover #kits {
+    display: block;
 }

@@ -1,18 +1,38 @@
 ---
-import '../styles/header.css';
+
 ---
 
 <div class="flex-container">
     <a href="/">
         <p>Brandy Byte Games</p>
     </a>
-    <div class="inner-flex">
-        <a href="/about">
-            About
-        </a>
-        <a href="/contact">
-            Contact
-        </a>
+    <a href="./">
+        Home
+    </a>
+    <div class="press-kit-dropdown">
+        <a>Press Kits</a>
+            <ul id="kits">
+                <li>
+                    <a href="">
+                        Brandy Byte Games
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Brandy Byte Games 2
+                    </a>
+                </li>
+            </ul>
     </div>
+    <a href="/about">
+        About
+    </a>
+    <!-- <a href="/contact">
+        Contact
+    </a> -->
 </div>
 <div class="content-spacer"></div>
+
+<style>
+    @import url('../styles/header.css');
+</style>
