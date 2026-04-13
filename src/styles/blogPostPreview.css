@@ -1,0 +1,22 @@
+.preview {
+    margin-right: auto;
+    min-width: fit-content;
+    max-width: 100%;
+    text-align: left;
+    padding-right: 16px;
+}
+
+.preview h2 > a {
+    color: var(--clickable-color);
+    text-decoration: none;
+}
+
+.preview p {
+    color: var(--text-primary-color);
+    text-decoration: none;
+}
+
+.preview span {
+    color: var(--blog-date-color);
+    text-decoration: none;
+}
