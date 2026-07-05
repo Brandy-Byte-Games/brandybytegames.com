@@ -24,6 +24,7 @@
     .dates p {
         color: var(--blog-date-color);
         font-size: 0.9em;
-        margin-bottom: 1em;
+        margin-top: 2px;
+        margin-bottom: 2px;
     }
 }

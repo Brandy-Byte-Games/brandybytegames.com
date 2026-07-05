@@ -19,7 +19,7 @@ export async function getLatestPost(): Promise<BlogPost | null> {
 }
 
 export async function getAllPosts(): Promise<BlogPost[]> {
-    const posts = await import.meta.glob("../pages/blog-posts/*.md");
+    const posts = await import.meta.glob("../pages/devlog/*.md");
 
     const postEntries = Object.entries(posts);
 
@@ -32,12 +32,10 @@ export async function getAllPosts(): Promise<BlogPost[]> {
             title: post.frontmatter.title,
             content: post.mdxContent,
             subtitle: post.frontmatter.subtitle,
-            url: `/blog/posts/${post.frontmatter.slug}`,
+            url: `/devlog/${post.frontmatter.slug}`,
             // TODO: why is this 1 day behind...
             pubDate: new Date(post.frontmatter.pubDate).toDateString(),
         } as BlogPost;
-
-        console.log(postData.pubDate);
 
         if (post.frontmatter.editDate) {
             postData.editDate = new Date(post.frontmatter.editDate).toDateString();
