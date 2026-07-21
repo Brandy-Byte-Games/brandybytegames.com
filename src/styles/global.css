@@ -1,15 +1,14 @@
 :root {
-    --primary-color: #2274A5;
-    --clickable-color: #FADF63;
-    /* TODO: figure out better bg color, also includes reworking other colors */
-    --background-color: #84AE9A;
-    /* --background-color: rgb(34,34,34); */
-    --link-color: #FADF63;
-    --text-primary-color: #393424;
-    --text-secondary-color: rgb(102,194,255);
-    --header-primary-color: #E6AF2E;
-    --header-secondary-color: #FADF63;
-    --blog-date-color: rgb(73, 92, 105);
+    --background-color: #0F1E4E;
+    --break-color: #334582;
+    --clickable-color: #798CCC;
+    /* #334582 */
+    --link-color: #798CCC;
+    --text-primary-color: #CFDAFF;
+    --text-secondary-color: #B7C3E8;
+    --header-primary-color: #798CCC;
+    /* --header-secondary-color: #FADF63; */
+    --blog-date-color: #718FA3;
 }
 
 html, body {
@@ -67,5 +66,5 @@ a {
 }
 
 hr, .break {
-    color: var(--primary-color);
+    color: var(--break-color);
 }
