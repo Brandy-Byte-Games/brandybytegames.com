@@ -11,3 +11,14 @@
     padding-bottom: 12px;
     padding-right: 24px;
 }
+
+.footer-flex-container.copyright {
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

@@ -1,21 +1,70 @@
+:root {
+    --background-color: #0F1E4E;
+    --break-color: #334582;
+    --clickable-color: #798CCC;
+    /* #334582 */
+    --link-color: #798CCC;
+    --text-primary-color: #CFDAFF;
+    --text-secondary-color: #B7C3E8;
+    --header-primary-color: #798CCC;
+    /* --header-secondary-color: #FADF63; */
+    --blog-date-color: #718FA3;
+}
+
 html, body {
     height: 100%;
+    width: 80%;
+    margin: auto;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    @media only screen and (max-width: 1200px) {
+        width: 85%;
+    }
+    @media only screen and (max-width: 992px) {
+        width: 90%;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 95%;
+    }
+}
+
+.secondary-text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
-    background-color: rgb(34,34,34);
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
 }
 
-h1, h2 {
-    color: rgb(100,100,255);
+h1 {
+    color: var(--header-primary-color);
+}
+
+h2 {
+    color: var(--header-primary-color);
 }
 
 p {
-    color: white;
+    color: var(--text-primary-color);
+    font-size: 1.25em;
 }
 
 .content {
     flex: 1 0 auto;
+}
+
+a {
+    color: var(--clickable-color);
+    text-decoration: none;
+}
+
+hr, .break {
+    color: var(--break-color);
 }

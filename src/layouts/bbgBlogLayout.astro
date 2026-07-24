@@ -1,0 +1,28 @@
+---
+const { frontmatter } = Astro.props;
+import BrandybytegamesLayout from '../layouts/brandybytegamesLayout.astro';
+
+import '../styles/blog.css';
+---
+
+<BrandybytegamesLayout>
+    <div class="blog">
+        <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.subtitle}</h2>
+        <div class="dates">
+            <p>
+                Published on {new Date(frontmatter.pubDate).toDateString()}
+            </p>
+            {
+                frontmatter.editDate && (
+                    <p>
+                        edited on {new Date(frontmatter.editDate).toDateString()}
+                    </p>
+                )
+            }
+        </div>
+        <slot/>
+    </div>
+    <!-- tags section -->
+</BrandybytegamesLayout>
+

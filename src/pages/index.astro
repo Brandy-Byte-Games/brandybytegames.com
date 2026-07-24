@@ -1,12 +1,28 @@
 ---
 import { Image } from 'astro:assets';
-import BrandyImg from '../assets/brandy.png';
+import Wordmark from '../assets/bbg_wordmark.svg';
 import BrandybytegamesLayout from '../layouts/brandybytegamesLayout.astro';
 ---
 <BrandybytegamesLayout>
-    <Image src={BrandyImg} alt="Brandy Byte Games" width="286" height="480" />
-    <h1>
-        brandybytegames.com is currently under construction.
-    </h1>
-    <p>I'm still working on creating this site, please check back later!</p>
+    <div class="index-header">
+        <Image src={Wordmark} alt="Brandy Byte Games" width="143" height="240" />
+        <p>
+            Brandy Byte Games is a small game development studio focused on creating fun and unique games.
+        </p>
+    </div>
+
+    <div class="actions">
+        <!-- <a href="/games" class="action">
+            <Image src={Wordmark} alt="Brandy Byte Games" width="240" height="240" style="border-radius: 20px; background-color: black;" />
+            <p>Game Name...</p>
+        </a> -->
+        <a href="/devlog" class="action">
+            <!-- <Image src={Wordmark} alt="Brandy Byte Games" width="240" height="240" /> -->
+            <p>Check out the Dev Log!</p>
+            <!-- <p>Dev Log</p> -->
+        </a>
+    </div>
+    <style>
+        @import url('../styles/index.css');
+    </style>
 </BrandybytegamesLayout>

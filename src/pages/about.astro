@@ -1,19 +1,26 @@
 ---
+import { Image } from 'astro:assets';
+import BrandyImg from '../assets/brandy.png';
 import BrandybytegamesLayout from '../layouts/brandybytegamesLayout.astro';
 ---
 <BrandybytegamesLayout>
 	<h2>What is Brandy Byte Games</h2>
 	<p>
-		Brandy Byte Games is a game studio created by a software engineer with
-		a passion for game development.
+		Brandy Byte Games is a studio founded by a solo developer named Michael.
+		The name comes from Michael's dog, Brandy.
+		
 	</p>
 	<h2>Who is Brandy?</h2>
 	<p>
 		Brandy is my German Shepherd. She's a silly dog who loves playing with
-		her frisbee and lounging about when I'm working.
+		her frisbee and lounging about when I'm working during the day.
+		<br>
+		<!-- change this... -->
+		<Image src={BrandyImg} alt="Brandy Byte Games" width="143" height="240" />
 	</p>
 	<h2>What kind of games do you make?</h2>
 	<p>
-		Currently, that's a secret :)
+		We make whatever sounds fun to work on. We've not nailed down a specific genre
+		or style, but we'll figure that out as we go. That's what makes this fun, right?
 	</p>
 </BrandybytegamesLayout>

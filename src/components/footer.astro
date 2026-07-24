@@ -1,14 +1,31 @@
 ---
 import "../styles/footer.css"
+const socialItems = [
+    {
+        name: "YouTube",
+        url: "https://www.youtube.com/@BrandyByteGames",
+    },
+]
 ---
 <div class="footer-flex-container">
-    <div class="games-links">
+    <!-- <div class="games-links">
         <h2>Games</h2>
-        <p>:)</p>
-    </div>
+        <p>Coming soon!</p>
+    </div> -->
     <div class="social-links">
         <h2>Social</h2>
-        <p>:)</p>
+        <ul>
+            {socialItems.map((item) => (
+                <li>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                        {item.name}
+                    </a>
+                </li>
+            ))}
+        </ul>
     </div>
-    <p>&copy; 2025 Brandy Byte Games. All rights reserved.</p>
+    <div class="contact-links">
+        <h2>Contact</h2>
+        <p>Not set up yet :)</p>
+    </div>
 </div>

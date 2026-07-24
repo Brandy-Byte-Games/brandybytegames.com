@@ -1,0 +1,36 @@
+---
+import BbgBlogPreviewLayout from "../layouts/bbgBlogPreviewLayout.astro";
+import BrandybytegamesLayout from "../layouts/brandybytegamesLayout.astro";
+
+import { getLatestPost, getAllPosts, type BlogPost } from "../util/blogUtils.ts";
+
+const latestPost = await getLatestPost();
+const allPosts = await getAllPosts();
+---
+
+<BrandybytegamesLayout>
+  <div>
+    {
+      latestPost ? (
+        <>
+          <h1>Our Latest Post</h1>
+          <BbgBlogPreviewLayout post={latestPost} />
+          <hr class="break" />
+        </>
+      ) : (
+        <p>No posts yet (or they failed to load), check back later!</p>
+      )
+    }
+
+    {
+      latestPost && <p>Or, check out our older posts:</p>
+    }
+
+    {
+      allPosts.map((post) => {
+        if (post.url === latestPost?.url) return null;
+        return <BbgBlogPreviewLayout post={post} />;
+      })
+    }
+  </div>
+</BrandybytegamesLayout>
