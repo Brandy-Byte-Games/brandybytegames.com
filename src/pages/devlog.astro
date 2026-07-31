@@ -15,7 +15,6 @@ const allPosts = await getAllPosts();
         <>
           <h1>Our Latest Post</h1>
           <BbgBlogPreviewLayout post={latestPost} />
-          <hr class="break" />
         </>
       ) : (
         <p>No posts yet (or they failed to load), check back later!</p>
@@ -23,7 +22,7 @@ const allPosts = await getAllPosts();
     }
 
     {
-      latestPost && <p>Or, check out our older posts:</p>
+      latestPost && allPosts.length > 1 && <hr class="break" /><p>Or, check out our older posts:</p>
     }
 
     {
