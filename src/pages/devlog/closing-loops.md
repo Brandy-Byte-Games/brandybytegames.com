@@ -25,3 +25,5 @@ Let's talk about what's in scope.
 * Basic player movement with abilities
 * Short greyboxed level to provide playground for abilities/enemies
 * Functional collectible system (major/minor collectibles)
+
+Surprisingly, level design has been the hardest for me to break into. I used to draw up crazy levels for Mario 64 or weird bases for Minecraft (before I owned it). For some reason, I've just not been able to channel whatever it was that I had then.
