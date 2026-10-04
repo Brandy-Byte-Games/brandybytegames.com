@@ -3,6 +3,10 @@
         text-align: left;
     }
 
+    ul {
+        color: var(--text-primary-color);
+    }
+
     h2 {
         color: var(--text-primary-color);
     }
