@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/bbgBlogLayout.astro
 slug: closing-loops
-title: Closing Loops & Writing Code
-subtitle: New features one line of code at a time.
-pubDate: 2026-09-24
+title: Closing Loops & Playtesting
+subtitle: "Playtest #1, coming soon"
+pubDate: 2026-10-03
 tags: business
 ---
 
@@ -13,7 +13,7 @@ With game development being second to my life and job, it's easy to let myself f
 
 ## What's Brandy Byte Games' First Project?
 
-The first project I'm set on developing and releasing is a platformer inspired by some of the greats of the 90s/00s platformers/collectathons. The name is still being work shopped, but for the time being, I'll just call it PSM.
+The first project I'm set on developing and releasing is a platformer inspired by some of the greats of the 90s/00s platformers/collectathons. The name is still being workshopped, but for the time being, I'll just call it PSM.
 
 ## The Scope of Playtest 1
 
@@ -30,4 +30,11 @@ Surprisingly, level design has been the hardest for me to break into. I used to 
 
 ## Who will be a part of the playtest?
 
-Since this is Brandy Byte Games' first game, the playtesters will be limited to friends and family. It will be easier to facilitate play and gather feedback with this set of people. Especially considering this will be the first time I'll be getting feedback on the game (other than from my wife).
+Since this is Brandy Byte Games' first game, the playtesters will be limited to friends and family. It will be easier to facilitate play and gather feedback with this set of people, especially considering this will be the first time I'll be getting feedback on the game (other than from my wife).
+
+## What's next?
+
+It's pretty simple - I'm going to spend some time nailing down an achievable set of work items for October/November. Once I have those, they'll go into my project space in GitHub to work on and test before I work on building the game into something I can distribute to the playtesters. Sometimes you just need to set a deadline and stick to it. That's what the plan is.
+
+
+Once I can pull this playtest together, I'll be posting some followups here.
